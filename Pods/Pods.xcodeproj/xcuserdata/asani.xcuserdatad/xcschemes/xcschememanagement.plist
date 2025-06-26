@@ -4,16 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MileTask.xcscheme_^#shared#^_</key>
+		<key>Pods-MileTask.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>0</integer>
 		</dict>
-		<key>MileTaskComponent.xcscheme_^#shared#^_</key>
+		<key>Pods-MileTaskComponent.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>

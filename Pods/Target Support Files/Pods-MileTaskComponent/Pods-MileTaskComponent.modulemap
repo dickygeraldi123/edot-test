@@ -1,0 +1,6 @@
+framework module Pods_MileTaskComponent {
+  umbrella header "Pods-MileTaskComponent-umbrella.h"
+
+  export *
+  module * { export * }
+}

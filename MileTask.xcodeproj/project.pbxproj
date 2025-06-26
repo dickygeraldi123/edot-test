@@ -6,8 +6,55 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4435ABD02E0D8CC300FB991E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 4435ABCF2E0D8CC300FB991E /* ComposableArchitecture */; };
+		4435AC062E0D8D9E00FB991E /* MileTaskComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4435ABFB2E0D8D8E00FB991E /* MileTaskComponent.framework */; };
+		4435AC072E0D8D9E00FB991E /* MileTaskComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4435ABFB2E0D8D8E00FB991E /* MileTaskComponent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		658AEACDB042991E0F0142ED /* Pods_MileTaskComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70882053A89234CF4839691C /* Pods_MileTaskComponent.framework */; };
+		C8425BFA374666D8711F1331 /* Pods_MileTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9656037F0BA161F4AB78D2C /* Pods_MileTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4435AC082E0D8D9E00FB991E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4435ABB42E0D8BD700FB991E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4435ABFA2E0D8D8E00FB991E;
+			remoteInfo = MileTaskComponent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4435AC0A2E0D8D9E00FB991E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4435AC072E0D8D9E00FB991E /* MileTaskComponent.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3F1E1BFA54E1E1ECC2893E47 /* Pods-MileTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileTask.debug.xcconfig"; path = "Target Support Files/Pods-MileTask/Pods-MileTask.debug.xcconfig"; sourceTree = "<group>"; };
+		4433CC062E0D8FE300E4D832 /* MileTaskComponent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskComponent.xcodeproj; sourceTree = "<group>"; };
 		4435ABBC2E0D8BD700FB991E /* MileTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MileTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4435ABFB2E0D8D8E00FB991E /* MileTaskComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MileTaskComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4435AC252E0D8F2D00FB991E /* MileTaskComponent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskComponent.xcodeproj; sourceTree = "<group>"; };
+		44A0E62B2E0D907F00F31FED /* MileTaskComponent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskComponent.xcodeproj; sourceTree = "<group>"; };
+		44A0E69B2E0D917D00F31FED /* MileTaskStorage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskStorage.xcodeproj; sourceTree = "<group>"; };
+		44A0E6C12E0D91AA00F31FED /* MileTaskDomain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskDomain.xcodeproj; sourceTree = "<group>"; };
+		44A0E6D42E0D94B400F31FED /* MileTaskComponent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskComponent.xcodeproj; sourceTree = "<group>"; };
+		44A0E6D92E0D94B400F31FED /* MileTaskDomain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskDomain.xcodeproj; sourceTree = "<group>"; };
+		44A0E6DE2E0D94B400F31FED /* MileTaskStorage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskStorage.xcodeproj; sourceTree = "<group>"; };
+		4BC8230B38615C6C03D75067 /* Pods-MileTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileTask.release.xcconfig"; path = "Target Support Files/Pods-MileTask/Pods-MileTask.release.xcconfig"; sourceTree = "<group>"; };
+		4D067BCDAD35716CC793EFAC /* Pods-MileTaskComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileTaskComponent.release.xcconfig"; path = "Target Support Files/Pods-MileTaskComponent/Pods-MileTaskComponent.release.xcconfig"; sourceTree = "<group>"; };
+		70882053A89234CF4839691C /* Pods_MileTaskComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MileTaskComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8636B96AB706C986CD74ED4E /* Pods-MileTaskComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileTaskComponent.debug.xcconfig"; path = "Target Support Files/Pods-MileTaskComponent/Pods-MileTaskComponent.debug.xcconfig"; sourceTree = "<group>"; };
+		E9656037F0BA161F4AB78D2C /* Pods_MileTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MileTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,17 +70,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4435AC062E0D8D9E00FB991E /* MileTaskComponent.framework in Frameworks */,
+				4435ABD02E0D8CC300FB991E /* ComposableArchitecture in Frameworks */,
+				C8425BFA374666D8711F1331 /* Pods_MileTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4435ABF82E0D8D8E00FB991E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658AEACDB042991E0F0142ED /* Pods_MileTaskComponent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4433CC0D2E0D8FE300E4D832 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4435ABB32E0D8BD700FB991E = {
 			isa = PBXGroup;
 			children = (
 				4435ABBE2E0D8BD700FB991E /* MileTask */,
+				4435AC052E0D8D9E00FB991E /* Frameworks */,
 				4435ABBD2E0D8BD700FB991E /* Products */,
+				643ADD40E77DE424BE5D8CB5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,34 +108,137 @@
 			isa = PBXGroup;
 			children = (
 				4435ABBC2E0D8BD700FB991E /* MileTask.app */,
+				4435ABFB2E0D8D8E00FB991E /* MileTaskComponent.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4435AC052E0D8D9E00FB991E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9656037F0BA161F4AB78D2C /* Pods_MileTask.framework */,
+				70882053A89234CF4839691C /* Pods_MileTaskComponent.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4435AC272E0D8F2D00FB991E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44A0E6322E0D907F00F31FED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44A0E69D2E0D917D00F31FED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44A0E6C32E0D91AA00F31FED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44A0E6E52E0D94B400F31FED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44A0E6E72E0D94B400F31FED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44A0E6E92E0D94B400F31FED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		643ADD40E77DE424BE5D8CB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F1E1BFA54E1E1ECC2893E47 /* Pods-MileTask.debug.xcconfig */,
+				4BC8230B38615C6C03D75067 /* Pods-MileTask.release.xcconfig */,
+				8636B96AB706C986CD74ED4E /* Pods-MileTaskComponent.debug.xcconfig */,
+				4D067BCDAD35716CC793EFAC /* Pods-MileTaskComponent.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4435ABF62E0D8D8E00FB991E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4435ABBB2E0D8BD700FB991E /* MileTask */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4435ABCB2E0D8BD800FB991E /* Build configuration list for PBXNativeTarget "MileTask" */;
 			buildPhases = (
+				CA9F4ECBBC6EC3763AE1EECE /* [CP] Check Pods Manifest.lock */,
 				4435ABB82E0D8BD700FB991E /* Sources */,
 				4435ABB92E0D8BD700FB991E /* Frameworks */,
 				4435ABBA2E0D8BD700FB991E /* Resources */,
+				4435AC0A2E0D8D9E00FB991E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4435AC092E0D8D9E00FB991E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				4435ABBE2E0D8BD700FB991E /* MileTask */,
 			);
 			name = MileTask;
 			packageProductDependencies = (
+				4435ABCF2E0D8CC300FB991E /* ComposableArchitecture */,
 			);
 			productName = MileTask;
 			productReference = 4435ABBC2E0D8BD700FB991E /* MileTask.app */;
 			productType = "com.apple.product-type.application";
+		};
+		4435ABFA2E0D8D8E00FB991E /* MileTaskComponent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4435AC022E0D8D8E00FB991E /* Build configuration list for PBXNativeTarget "MileTaskComponent" */;
+			buildPhases = (
+				A422006B2643C4F21B5B43F9 /* [CP] Check Pods Manifest.lock */,
+				4435ABF62E0D8D8E00FB991E /* Headers */,
+				4435ABF72E0D8D8E00FB991E /* Sources */,
+				4435ABF82E0D8D8E00FB991E /* Frameworks */,
+				4435ABF92E0D8D8E00FB991E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MileTaskComponent;
+			productName = MileTaskComponent;
+			productReference = 4435ABFB2E0D8D8E00FB991E /* MileTaskComponent.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +253,9 @@
 					4435ABBB2E0D8BD700FB991E = {
 						CreatedOnToolsVersion = 16.2;
 					};
+					4435ABFA2E0D8D8E00FB991E = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = 4435ABB72E0D8BD700FB991E /* Build configuration list for PBXProject "MileTask" */;
@@ -94,12 +267,50 @@
 			);
 			mainGroup = 4435ABB32E0D8BD700FB991E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4435ABCE2E0D8CC300FB991E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4435ABBD2E0D8BD700FB991E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4435AC272E0D8F2D00FB991E /* Products */;
+					ProjectRef = 4435AC252E0D8F2D00FB991E /* MileTaskComponent.xcodeproj */;
+				},
+				{
+					ProductGroup = 4433CC0D2E0D8FE300E4D832 /* Products */;
+					ProjectRef = 4433CC062E0D8FE300E4D832 /* MileTaskComponent.xcodeproj */;
+				},
+				{
+					ProductGroup = 44A0E6322E0D907F00F31FED /* Products */;
+					ProjectRef = 44A0E62B2E0D907F00F31FED /* MileTaskComponent.xcodeproj */;
+				},
+				{
+					ProductGroup = 44A0E6E92E0D94B400F31FED /* Products */;
+					ProjectRef = 44A0E6D42E0D94B400F31FED /* MileTaskComponent.xcodeproj */;
+				},
+				{
+					ProductGroup = 44A0E6E52E0D94B400F31FED /* Products */;
+					ProjectRef = 44A0E6D92E0D94B400F31FED /* MileTaskDomain.xcodeproj */;
+				},
+				{
+					ProductGroup = 44A0E6C32E0D91AA00F31FED /* Products */;
+					ProjectRef = 44A0E6C12E0D91AA00F31FED /* MileTaskDomain.xcodeproj */;
+				},
+				{
+					ProductGroup = 44A0E6E72E0D94B400F31FED /* Products */;
+					ProjectRef = 44A0E6DE2E0D94B400F31FED /* MileTaskStorage.xcodeproj */;
+				},
+				{
+					ProductGroup = 44A0E69D2E0D917D00F31FED /* Products */;
+					ProjectRef = 44A0E69B2E0D917D00F31FED /* MileTaskStorage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4435ABBB2E0D8BD700FB991E /* MileTask */,
+				4435ABFA2E0D8D8E00FB991E /* MileTaskComponent */,
 			);
 		};
 /* End PBXProject section */
@@ -112,7 +323,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4435ABF92E0D8D8E00FB991E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A422006B2643C4F21B5B43F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MileTaskComponent-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA9F4ECBBC6EC3763AE1EECE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MileTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4435ABB82E0D8BD700FB991E /* Sources */ = {
@@ -122,7 +387,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4435ABF72E0D8D8E00FB991E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4435AC092E0D8D9E00FB991E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4435ABFA2E0D8D8E00FB991E /* MileTaskComponent */;
+			targetProxy = 4435AC082E0D8D9E00FB991E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4435ABC92E0D8BD800FB991E /* Debug */ = {
@@ -241,15 +521,18 @@
 		};
 		4435ABCC2E0D8BD800FB991E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F1E1BFA54E1E1ECC2893E47 /* Pods-MileTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MileTask/MileTask.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MileTask/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MileTask;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -260,33 +543,38 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.MileTask;
+				PRODUCT_BUNDLE_IDENTIFIER = MileTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
 		};
 		4435ABCD2E0D8BD800FB991E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BC8230B38615C6C03D75067 /* Pods-MileTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MileTask/MileTask.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MileTask/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MileTask;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -297,19 +585,96 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.MileTask;
+				PRODUCT_BUNDLE_IDENTIFIER = MileTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		4435AC032E0D8D8E00FB991E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8636B96AB706C986CD74ED4E /* Pods-MileTaskComponent.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = test.MileTaskComponent;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 18.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4435AC042E0D8D8E00FB991E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D067BCDAD35716CC793EFAC /* Pods-MileTaskComponent.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = test.MileTaskComponent;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 18.2;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -334,7 +699,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4435AC022E0D8D8E00FB991E /* Build configuration list for PBXNativeTarget "MileTaskComponent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4435AC032E0D8D8E00FB991E /* Debug */,
+				4435AC042E0D8D8E00FB991E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4435ABCE2E0D8CC300FB991E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.20.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4435ABCF2E0D8CC300FB991E /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4435ABCE2E0D8CC300FB991E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4435ABB42E0D8BD700FB991E /* Project object */;
 }

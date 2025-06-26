@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		4435ABDE2E0D8D4300FB991E /* MileTaskComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MileTaskComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4435AC152E0D8F2C00FB991E /* MileTaskComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MileTaskComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		4435ABE52E0D8D4300FB991E /* Exceptions for "MileTaskComponent" folder in "MileTaskComponent" target */ = {
+		4435AC1C2E0D8F2C00FB991E /* Exceptions for "MileTaskComponent" folder in "MileTaskComponent" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
 				MileTaskComponent.h,
 			);
-			target = 4435ABDD2E0D8D4300FB991E /* MileTaskComponent */;
+			target = 4435AC142E0D8F2C00FB991E /* MileTaskComponent */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4435ABE02E0D8D4300FB991E /* MileTaskComponent */ = {
+		4435AC172E0D8F2C00FB991E /* MileTaskComponent */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				4435ABE52E0D8D4300FB991E /* Exceptions for "MileTaskComponent" folder in "MileTaskComponent" target */,
+				4435AC1C2E0D8F2C00FB991E /* Exceptions for "MileTaskComponent" folder in "MileTaskComponent" target */,
 			);
 			path = MileTaskComponent;
 			sourceTree = "<group>";
@@ -32,7 +32,7 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4435ABDB2E0D8D4300FB991E /* Frameworks */ = {
+		4435AC122E0D8F2C00FB991E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4435ABD42E0D8D4300FB991E = {
+		4435AC0B2E0D8F2C00FB991E = {
 			isa = PBXGroup;
 			children = (
-				4435ABE02E0D8D4300FB991E /* MileTaskComponent */,
-				4435ABDF2E0D8D4300FB991E /* Products */,
+				4435AC172E0D8F2C00FB991E /* MileTaskComponent */,
+				4435AC162E0D8F2C00FB991E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4435ABDF2E0D8D4300FB991E /* Products */ = {
+		4435AC162E0D8F2C00FB991E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4435ABDE2E0D8D4300FB991E /* MileTaskComponent.framework */,
+				4435AC152E0D8F2C00FB991E /* MileTaskComponent.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4435ABD92E0D8D4300FB991E /* Headers */ = {
+		4435AC102E0D8F2C00FB991E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,64 +71,65 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4435ABDD2E0D8D4300FB991E /* MileTaskComponent */ = {
+		4435AC142E0D8F2C00FB991E /* MileTaskComponent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4435ABE62E0D8D4300FB991E /* Build configuration list for PBXNativeTarget "MileTaskComponent" */;
+			buildConfigurationList = 4435AC1D2E0D8F2C00FB991E /* Build configuration list for PBXNativeTarget "MileTaskComponent" */;
 			buildPhases = (
-				4435ABD92E0D8D4300FB991E /* Headers */,
-				4435ABDA2E0D8D4300FB991E /* Sources */,
-				4435ABDB2E0D8D4300FB991E /* Frameworks */,
-				4435ABDC2E0D8D4300FB991E /* Resources */,
+				4435AC102E0D8F2C00FB991E /* Headers */,
+				4435AC112E0D8F2C00FB991E /* Sources */,
+				4435AC122E0D8F2C00FB991E /* Frameworks */,
+				4435AC132E0D8F2C00FB991E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4435ABE02E0D8D4300FB991E /* MileTaskComponent */,
+				4435AC172E0D8F2C00FB991E /* MileTaskComponent */,
 			);
 			name = MileTaskComponent;
 			packageProductDependencies = (
 			);
 			productName = MileTaskComponent;
-			productReference = 4435ABDE2E0D8D4300FB991E /* MileTaskComponent.framework */;
+			productReference = 4435AC152E0D8F2C00FB991E /* MileTaskComponent.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4435ABD52E0D8D4300FB991E /* Project object */ = {
+		4435AC0C2E0D8F2C00FB991E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					4435ABDD2E0D8D4300FB991E = {
+					4435AC142E0D8F2C00FB991E = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
-			buildConfigurationList = 4435ABD82E0D8D4300FB991E /* Build configuration list for PBXProject "MileTaskComponent" */;
+			buildConfigurationList = 4435AC0F2E0D8F2C00FB991E /* Build configuration list for PBXProject "MileTaskComponent" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 4435ABD42E0D8D4300FB991E;
+			mainGroup = 4435AC0B2E0D8F2C00FB991E;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 4435ABDF2E0D8D4300FB991E /* Products */;
+			productRefGroup = 4435AC162E0D8F2C00FB991E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4435ABDD2E0D8D4300FB991E /* MileTaskComponent */,
+				4435AC142E0D8F2C00FB991E /* MileTaskComponent */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4435ABDC2E0D8D4300FB991E /* Resources */ = {
+		4435AC132E0D8F2C00FB991E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +139,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4435ABDA2E0D8D4300FB991E /* Sources */ = {
+		4435AC112E0D8F2C00FB991E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -148,10 +149,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4435ABE72E0D8D4300FB991E /* Debug */ = {
+		4435AC1E2E0D8F2C00FB991E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -175,15 +177,17 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4435ABE82E0D8D4300FB991E /* Release */ = {
+		4435AC1F2E0D8F2C00FB991E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -212,7 +216,7 @@
 			};
 			name = Release;
 		};
-		4435ABE92E0D8D4300FB991E /* Debug */ = {
+		4435AC202E0D8F2C00FB991E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,7 +282,7 @@
 			};
 			name = Debug;
 		};
-		4435ABEA2E0D8D4300FB991E /* Release */ = {
+		4435AC212E0D8F2C00FB991E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -340,25 +344,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4435ABD82E0D8D4300FB991E /* Build configuration list for PBXProject "MileTaskComponent" */ = {
+		4435AC0F2E0D8F2C00FB991E /* Build configuration list for PBXProject "MileTaskComponent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4435ABE92E0D8D4300FB991E /* Debug */,
-				4435ABEA2E0D8D4300FB991E /* Release */,
+				4435AC202E0D8F2C00FB991E /* Debug */,
+				4435AC212E0D8F2C00FB991E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4435ABE62E0D8D4300FB991E /* Build configuration list for PBXNativeTarget "MileTaskComponent" */ = {
+		4435AC1D2E0D8F2C00FB991E /* Build configuration list for PBXNativeTarget "MileTaskComponent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4435ABE72E0D8D4300FB991E /* Debug */,
-				4435ABE82E0D8D4300FB991E /* Release */,
+				4435AC1E2E0D8F2C00FB991E /* Debug */,
+				4435AC1F2E0D8F2C00FB991E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4435ABD52E0D8D4300FB991E /* Project object */;
+	rootObject = 4435AC0C2E0D8F2C00FB991E /* Project object */;
 }
