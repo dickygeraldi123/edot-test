@@ -2,18 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MileTaskStorage/MileTaskStorage.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MileTaskDomain/MileTaskDomain.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MileTaskComponent/MileTaskComponent.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MileTask.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:MileTask/Shared/MileTaskComponent/MileTaskComponent.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:MileTask/Shared/MileTaskStorage/MileTaskStorage.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:MileTask/Shared/MileTaskDomain/MileTaskDomain.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

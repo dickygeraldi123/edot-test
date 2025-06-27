@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+import MileTaskComponent
 
 @main
 struct MileTaskApp: App {
+    init() {
+        FontManager.registerFonts()
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
