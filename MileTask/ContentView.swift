@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MileTaskComponent
 
 struct ContentView: View {
     var body: some View {
@@ -14,6 +15,8 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+                .typographyStyle(.Custom(size: 24, .bold))
+                .foregroundColor(.primary)
         }
         .padding()
     }
