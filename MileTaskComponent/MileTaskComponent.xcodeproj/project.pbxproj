@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4424595C2E0F9FFA00EC321D /* MileTaskDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4424595B2E0F9FFA00EC321D /* MileTaskDomain.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		4424595B2E0F9FFA00EC321D /* MileTaskDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MileTaskDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		444C93512E0EF58D002FF28C /* MileTaskComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MileTaskComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -47,16 +52,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4424595C2E0F9FFA00EC321D /* MileTaskDomain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4424595A2E0F9FFA00EC321D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4424595B2E0F9FFA00EC321D /* MileTaskDomain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		444C93472E0EF58D002FF28C = {
 			isa = PBXGroup;
 			children = (
 				444C93532E0EF58D002FF28C /* MileTaskComponent */,
+				4424595A2E0F9FFA00EC321D /* Frameworks */,
 				444C93522E0EF58D002FF28C /* Products */,
 			);
 			sourceTree = "<group>";
