@@ -43,9 +43,11 @@ public extension Color {
     static let BackgroundSecondaryPrimary = Color(light: .backgroundSecondaryBlack, dark: .backgroundSecondaryLight)
 
     // Text
-    static let TextSolod = Color(light: .darkColor, dark: .whiteColor)
+    static let TextSolid = Color(light: .darkColor, dark: .whiteColor)
     static let TextPrimary = Color(light: .primaryTextLight, dark: .primaryTextBlack)
     static let TextSecondary = Color(light: .secondaryTextLight, dark: .secondaryTextBlack)
+    static let TextInversePrimary = Color(light: .primaryTextBlack, dark: .primaryTextLight)
+    static let TextInverseSecondary = Color(light: .secondaryTextBlack, dark: .secondaryTextLight)
 
     // Border
     static let borderLinePrimary = Color(light: .borderDark, dark: .borderWhite)
