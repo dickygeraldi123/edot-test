@@ -17,7 +17,7 @@ public final class CoreDataService: CoreDataProtocol {
     }
 
     private init() {
-        let bundle = Bundle(for: EpicModel.self)
+        let bundle = Bundle(for: TaskModel.self)
         guard let modelURL = bundle.url(forResource: "MileTaskModel", withExtension: "momd"),
               let model = NSManagedObjectModel(contentsOf: modelURL) else {
             fatalError("❌ Could not load Core Data model")

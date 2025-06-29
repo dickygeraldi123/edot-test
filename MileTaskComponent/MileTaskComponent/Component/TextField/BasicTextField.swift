@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ValidatedTextField: View {
+struct BasicTextField: View {
     enum InputType {
         case normal
         case secure
@@ -41,10 +41,12 @@ struct ValidatedTextField: View {
                 if inputType == .secure && !isSecureVisible {
                     SecureField(placeholder, text: $text)
                         .keyboardType(keyboard)
+                        .font(Font.customFont(type: .medium, size: 12))
                         .onChange(of: text) { updateText($0) }
                 } else {
                     TextField(placeholder, text: $text)
                         .keyboardType(keyboard)
+                        .font(Font.customFont(type: .medium, size: 12))
                         .autocapitalization(.none)
                         .onChange(of: text) { updateText($0) }
                 }

@@ -9,11 +9,11 @@ import SwiftUI
 
 public extension Image {
     static func ComponentImage(named: String) -> Image? {
-        return Image(named, bundle: Bundle(identifier: "test.MileTaskComponent"))
+        return Image(named)
     }
 
     static func getImageByMode(named: String) -> String {
         return UIScreen.main.traitCollection.userInterfaceStyle == .dark ?
-            "\(named)_Dark" : "\(named)_white"
+            "\(named)_dark" : "\(named)_white"
     }
 }

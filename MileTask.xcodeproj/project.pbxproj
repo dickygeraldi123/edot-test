@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4435ABD02E0D8CC300FB991E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 4435ABCF2E0D8CC300FB991E /* ComposableArchitecture */; };
+		44218AB22E104E9800B7BB52 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 44218AB12E104E9800B7BB52 /* ComposableArchitecture */; };
 		444C93B72E0EF632002FF28C /* MileTaskComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444C93B42E0EF632002FF28C /* MileTaskComponent.framework */; };
 		444C93B92E0EF632002FF28C /* MileTaskDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444C93B52E0EF632002FF28C /* MileTaskDomain.framework */; };
 		444C93BB2E0EF632002FF28C /* MileTaskStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444C93B62E0EF632002FF28C /* MileTaskStorage.framework */; };
@@ -23,6 +23,7 @@
 		444C93B42E0EF632002FF28C /* MileTaskComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MileTaskComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		444C93B52E0EF632002FF28C /* MileTaskDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MileTaskDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		444C93B62E0EF632002FF28C /* MileTaskStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MileTaskStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4485D7D82E104915003E4CBB /* RxFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A0E62B2E0D907F00F31FED /* MileTaskComponent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskComponent.xcodeproj; sourceTree = "<group>"; };
 		44A0E69B2E0D917D00F31FED /* MileTaskStorage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskStorage.xcodeproj; sourceTree = "<group>"; };
 		44A0E6C12E0D91AA00F31FED /* MileTaskDomain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskDomain.xcodeproj; sourceTree = "<group>"; };
@@ -31,9 +32,22 @@
 		44A0E6DE2E0D94B400F31FED /* MileTaskStorage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskStorage.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		44218AC82E10556200B7BB52 /* Exceptions for "MileTask" folder in "MileTask" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4435ABBB2E0D8BD700FB991E /* MileTask */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4435ABBE2E0D8BD700FB991E /* MileTask */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				44218AC82E10556200B7BB52 /* Exceptions for "MileTask" folder in "MileTask" target */,
+			);
 			path = MileTask;
 			sourceTree = "<group>";
 		};
@@ -46,8 +60,8 @@
 			files = (
 				444C93BB2E0EF632002FF28C /* MileTaskStorage.framework in Frameworks */,
 				444C93B92E0EF632002FF28C /* MileTaskDomain.framework in Frameworks */,
+				44218AB22E104E9800B7BB52 /* ComposableArchitecture in Frameworks */,
 				444C93B72E0EF632002FF28C /* MileTaskComponent.framework in Frameworks */,
-				4435ABD02E0D8CC300FB991E /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +123,7 @@
 		444C93B32E0EF632002FF28C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4485D7D82E104915003E4CBB /* RxFramework.framework */,
 				444C93B42E0EF632002FF28C /* MileTaskComponent.framework */,
 				444C93B52E0EF632002FF28C /* MileTaskDomain.framework */,
 				444C93B62E0EF632002FF28C /* MileTaskStorage.framework */,
@@ -178,7 +193,7 @@
 			);
 			name = MileTask;
 			packageProductDependencies = (
-				4435ABCF2E0D8CC300FB991E /* ComposableArchitecture */,
+				44218AB12E104E9800B7BB52 /* ComposableArchitecture */,
 			);
 			productName = MileTask;
 			productReference = 4435ABBC2E0D8BD700FB991E /* MileTask.app */;
@@ -209,7 +224,7 @@
 			mainGroup = 4435ABB32E0D8BD700FB991E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				4435ABCE2E0D8CC300FB991E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				44218AB02E104E9800B7BB52 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4435ABBD2E0D8BD700FB991E /* Products */;
@@ -416,6 +431,7 @@
 				DEVELOPMENT_TEAM = 8DC3XDL7Z3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MileTask/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MileTask;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -459,6 +475,7 @@
 				DEVELOPMENT_TEAM = 8DC3XDL7Z3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MileTask/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MileTask;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -512,7 +529,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4435ABCE2E0D8CC300FB991E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		44218AB02E104E9800B7BB52 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
@@ -523,9 +540,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4435ABCF2E0D8CC300FB991E /* ComposableArchitecture */ = {
+		44218AB12E104E9800B7BB52 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4435ABCE2E0D8CC300FB991E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = 44218AB02E104E9800B7BB52 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */

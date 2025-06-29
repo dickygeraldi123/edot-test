@@ -16,7 +16,7 @@ struct MileTaskApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeMainView()
         }
     }
 }

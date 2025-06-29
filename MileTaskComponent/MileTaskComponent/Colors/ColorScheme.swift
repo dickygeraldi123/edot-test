@@ -6,9 +6,21 @@
 //
 
 import SwiftUI
+import UIKit
 
 public extension Color {
     // MARK: - Coloring Asset
+
+    // Skeleton
+    static let SkeletonLoading = Color(light: Color(hex: "#ECF0F1FF")!, dark: Color(hex: "#1C2325FF")!)
+    static let InvertedSkeletonLoading = Color(
+        light: Color(hex: "#ECF0F1FF")!.adjustBrightness(
+            by: 0.94
+        ),
+        dark: Color(hex: "#1C2325FF")!.adjustBrightness(
+            by: 1.35
+        )
+    )
 
     // Primary Background
     static let backgroundPrimaryBlack = Color(hex: "111111")!
@@ -51,4 +63,17 @@ public extension Color {
 
     // Border
     static let borderLinePrimary = Color(light: .borderDark, dark: .borderWhite)
+}
+
+extension Color {
+    func adjustBrightness(by percent: CGFloat) -> Color {
+        let uiColor = UIColor(self)
+        var h: CGFloat = 0, s: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
+        if uiColor.getHue(&h, saturation: &s, brightness: &b, alpha: &a) {
+            let adjustedBrightness = max(min(b * percent, 1.0), 0.0)
+            let adjustedUIColor = UIColor(hue: h, saturation: s, brightness: adjustedBrightness, alpha: a)
+            return Color(adjustedUIColor)
+        }
+        return self
+    }
 }

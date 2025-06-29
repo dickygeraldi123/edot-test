@@ -6,22 +6,24 @@
 //
 
 import SwiftUI
+import MileTaskDomain
 
-struct TaskViewCell: View {
-    var body: some View {
+public struct TaskViewCell: View {
+    let data: TaskModel
+
+    public init(data: TaskModel) {
+        self.data = data
+    }
+
+    public var body: some View {
         VStack {
             VStack(spacing: 8) {
                 HStack {
-                    PriorityCircleCell(priority: .High)
+                    PriorityCircleCell(priority: PriorityTaskEnum(rawValue: data.priority ?? ""))
                     Spacer()
-                    Text("90%")
-                        .typographyStyle(.Custom(size: 12, .medium))
-                        .foregroundColor(.TextInverseSecondary)
-                        .lineLimit(1)
-                        .frame(maxWidth: .infinity, alignment: .trailing)
                 }
 
-                Text("Salon App Wireframe")
+                Text(data.title ?? "")
                     .typographyStyle(.Custom(size: 14, .bold))
                     .foregroundColor(.TextInverseSecondary)
                     .lineLimit(1)
@@ -33,19 +35,25 @@ struct TaskViewCell: View {
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 12, height: 12)
 
-                    Text("10.00 AM - 06:00 PM")
-                        .typographyStyle(.Custom(size: 14, .regular))
-                        .foregroundColor(.TextInversePrimary)
-                        .lineLimit(1)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                }
-
-                HStack(spacing: 4) {
-                    Text("Due Date : ")
+                    Text("Start Date: ")
                         .typographyStyle(.Custom(size: 12, .regular))
                         .foregroundColor(.TextInverseSecondary)
                         .lineLimit(1)
-                    Text("August 25")
+                    Text(data.startDate.formatDate())
+                        .typographyStyle(.Custom(size: 12, .regular))
+                        .foregroundColor(.TextInversePrimary)
+                        .lineLimit(1)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
+                    Spacer()
+                }
+
+                HStack(spacing: 4) {
+                    Text("Due Date: ")
+                        .typographyStyle(.Custom(size: 12, .regular))
+                        .foregroundColor(.TextInverseSecondary)
+                        .lineLimit(1)
+                    Text(data.dueDate.formatDate())
                         .typographyStyle(.Custom(size: 12, .regular))
                         .foregroundColor(.TextInversePrimary)
                         .lineLimit(1)
@@ -59,8 +67,4 @@ struct TaskViewCell: View {
         }
         .cornerRadius(12)
     }
-}
-
-#Preview {
-    TaskViewCell()
 }

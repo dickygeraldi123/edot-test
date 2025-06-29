@@ -35,15 +35,15 @@ public struct EmptyStateView: View {
 
             Text(config.title)
                 .typographyStyle(.Custom(size: 16, .bold))
-                .foregroundColor(.TextPrimary)
+                .foregroundColor(.TextInversePrimary)
                 .lineLimit(nil)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                .frame(maxWidth: .infinity, alignment: .center)
 
             Text(config.desc)
                 .typographyStyle(.Custom(size: 12, .medium))
-                .foregroundColor(.TextPrimary)
+                .foregroundColor(.TextInversePrimary)
                 .lineLimit(nil)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                .frame(maxWidth: .infinity, alignment: .center)
         }
     }
 }

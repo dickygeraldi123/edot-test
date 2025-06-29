@@ -61,4 +61,11 @@ public extension SwiftUIVW {
     func typographyStyle(lineLimit: Int? = nil, _ style: Font.Typography) -> some SwiftUI.View {
         self.modifier(TypographyModifier(typography: style, lineLimit: lineLimit))
     }
+
+    func statusBarBackground(color: Color) -> some View {
+        ZStack(alignment: .top) {
+            self
+            StatusBarBackground(color: color)
+        }
+    }
 }
