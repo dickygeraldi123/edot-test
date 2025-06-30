@@ -10,9 +10,11 @@ import MileTaskDomain
 
 public struct TaskViewCell: View {
     let data: TaskModel
+    var onTapStart: (() -> Void)?
 
-    public init(data: TaskModel) {
+    public init(data: TaskModel, onTapStart: (() -> Void)? = nil) {
         self.data = data
+        self.onTapStart = onTapStart
     }
 
     public var body: some View {
@@ -60,6 +62,34 @@ public struct TaskViewCell: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
 
                     Spacer()
+                }
+
+                if (Date(timeIntervalSince1970: data.dueDate) > Date()) {
+                    Spacer()
+                        .frame(height: 10)
+
+                    HStack(spacing: 12) {
+                        HStack {
+                            Text("Start")
+                                .typographyStyle(.Custom(size: 18, .bold))
+                                .foregroundColor(.darkColor)
+                                .frame(maxWidth: .infinity, alignment: .center)
+                                .padding(.all, 6)
+                        }
+                        .background(Color(hex: "fee4c1"))
+                        .cornerRadius(12)
+                        .frame(width: 75, height: 24)
+                        .onTapGesture {
+                            onTapStart?()
+                        }
+
+                        Text("Start to doing this task early")
+                            .typographyStyle(.Custom(size: 12, .regular))
+                            .foregroundColor(.TextInversePrimary)
+                            .lineLimit(1)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                    .padding(.bottom, 16)
                 }
             }
             .padding(.all, 16)

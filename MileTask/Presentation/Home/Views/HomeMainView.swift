@@ -8,6 +8,7 @@
 import SwiftUI
 import ComposableArchitecture
 import MileTaskComponent
+import MileTaskStorage
 
 struct HomeMainView: View {
     let store: StoreOf<HomeViewStore>
@@ -47,7 +48,13 @@ struct HomeMainView: View {
                         case .data(let tasks):
                             ForEach(tasks, id: \.self) { data in
                                 TaskViewCell(
-                                    data: data
+                                    data: data,
+                                    onTapStart: {
+                                        LiveActivityManager.shared.startActivity(
+                                            endTime: Date(timeIntervalSince1970: data.dueDate),
+                                            taskData: data
+                                        )
+                                    }
                                 )
                             }
                         case .empty:

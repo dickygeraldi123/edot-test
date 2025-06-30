@@ -9,6 +9,7 @@ import ActivityKit
 import WidgetKit
 import MileTaskComponent
 import SwiftUI
+import MileTaskDomain
 
 // MARK: - Views
 struct LiveActivityContent: View {

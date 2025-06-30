@@ -8,17 +8,19 @@
 import SwiftUI
 
 public struct PrimaryButton: View {
+    public var title: String?
     public var onClick: (() -> Void)?
     @Binding public var isEnable: Bool
 
-    public init(onClick: (() -> Void)? = nil, isEnable: Binding<Bool>) {
+    public init(title: String? = nil, onClick: (() -> Void)? = nil, isEnable: Binding<Bool>) {
+        self.title = title
         self.onClick = onClick
         self._isEnable = isEnable
     }
 
     public var body: some View {
         HStack {
-            Text("Submit")
+            Text(title != nil ? title! : "Submit")
                 .typographyStyle(.Custom(size: 18, .bold))
                 .foregroundColor(isEnable ? .darkColor : .primaryTextLight)
                 .frame(maxWidth: .infinity, alignment: .center)
