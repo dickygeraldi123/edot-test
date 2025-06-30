@@ -5,7 +5,7 @@
 //  Created by asani on 28/06/25.
 //
 
-public enum PriorityTaskEnum: String {
+public enum PriorityTaskEnum: String, CaseIterable {
     case High = "High"
     case Medium = "Medium"
     case Low = "Low"

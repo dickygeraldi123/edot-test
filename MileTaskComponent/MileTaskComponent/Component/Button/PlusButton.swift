@@ -10,6 +10,10 @@ import SwiftUI
 public struct PlusButton: View {
     public var onClick: (() -> Void)?
 
+    public init(onClick: (() -> Void)? = nil) {
+        self.onClick = onClick
+    }
+
     public var body: some View {
         HStack {
             Image.ComponentImage(named: "ic_plus")?

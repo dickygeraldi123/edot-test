@@ -7,16 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4417DF732E12728B00054FAE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4417DF722E12728B00054FAE /* WidgetKit.framework */; };
+		4417DF752E12728B00054FAE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4417DF742E12728B00054FAE /* SwiftUI.framework */; };
+		4417DF862E12728C00054FAE /* MileTaskLiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4417DF712E12728B00054FAE /* MileTaskLiveActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		44218AB22E104E9800B7BB52 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 44218AB12E104E9800B7BB52 /* ComposableArchitecture */; };
 		444C93B72E0EF632002FF28C /* MileTaskComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444C93B42E0EF632002FF28C /* MileTaskComponent.framework */; };
 		444C93B92E0EF632002FF28C /* MileTaskDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444C93B52E0EF632002FF28C /* MileTaskDomain.framework */; };
 		444C93BB2E0EF632002FF28C /* MileTaskStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444C93B62E0EF632002FF28C /* MileTaskStorage.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4417DF2C2E1271C000054FAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4435ABB42E0D8BD700FB991E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4435ABBB2E0D8BD700FB991E;
+			remoteInfo = MileTask;
+		};
+		4417DF842E12728C00054FAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4435ABB42E0D8BD700FB991E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4417DF702E12728B00054FAE;
+			remoteInfo = MileTaskLiveActivityExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4417DF8B2E12728C00054FAE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4417DF862E12728C00054FAE /* MileTaskLiveActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		441311CD2E0E7C6B0096196C /* MileTaskComponent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskComponent.xcodeproj; sourceTree = "<group>"; };
 		441311D22E0E7C6B0096196C /* MileTaskDomain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskDomain.xcodeproj; sourceTree = "<group>"; };
 		441311DE2E0E7C6B0096196C /* MileTaskStorage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskStorage.xcodeproj; sourceTree = "<group>"; };
+		4417DF112E1237EB00054FAE /* MileTaskRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MileTaskRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4417DF282E1271C000054FAE /* MileTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MileTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4417DF712E12728B00054FAE /* MileTaskLiveActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MileTaskLiveActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4417DF722E12728B00054FAE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4417DF742E12728B00054FAE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		4433CC062E0D8FE300E4D832 /* MileTaskComponent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskComponent.xcodeproj; sourceTree = "<group>"; };
 		4435ABBC2E0D8BD700FB991E /* MileTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MileTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4435AC252E0D8F2D00FB991E /* MileTaskComponent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskComponent.xcodeproj; sourceTree = "<group>"; };
@@ -33,6 +72,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4417DF8A2E12728C00054FAE /* Exceptions for "MileTaskLiveActivity" folder in "MileTaskLiveActivityExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4417DF702E12728B00054FAE /* MileTaskLiveActivityExtension */;
+		};
 		44218AC82E10556200B7BB52 /* Exceptions for "MileTask" folder in "MileTask" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -43,6 +89,19 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		4417DF292E1271C000054FAE /* MileTaskTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MileTaskTests;
+			sourceTree = "<group>";
+		};
+		4417DF762E12728C00054FAE /* MileTaskLiveActivity */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4417DF8A2E12728C00054FAE /* Exceptions for "MileTaskLiveActivity" folder in "MileTaskLiveActivityExtension" target */,
+			);
+			path = MileTaskLiveActivity;
+			sourceTree = "<group>";
+		};
 		4435ABBE2E0D8BD700FB991E /* MileTask */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -54,6 +113,22 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4417DF252E1271C000054FAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4417DF6E2E12728B00054FAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4417DF752E12728B00054FAE /* SwiftUI.framework in Frameworks */,
+				4417DF732E12728B00054FAE /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4435ABB92E0D8BD700FB991E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				4435ABBE2E0D8BD700FB991E /* MileTask */,
+				4417DF292E1271C000054FAE /* MileTaskTests */,
+				4417DF762E12728C00054FAE /* MileTaskLiveActivity */,
 				444C93B32E0EF632002FF28C /* Frameworks */,
 				4435ABBD2E0D8BD700FB991E /* Products */,
 			);
@@ -109,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				4435ABBC2E0D8BD700FB991E /* MileTask.app */,
+				4417DF282E1271C000054FAE /* MileTaskTests.xctest */,
+				4417DF712E12728B00054FAE /* MileTaskLiveActivityExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,10 +202,13 @@
 		444C93B32E0EF632002FF28C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4417DF112E1237EB00054FAE /* MileTaskRouter.framework */,
 				4485D7D82E104915003E4CBB /* RxFramework.framework */,
 				444C93B42E0EF632002FF28C /* MileTaskComponent.framework */,
 				444C93B52E0EF632002FF28C /* MileTaskDomain.framework */,
 				444C93B62E0EF632002FF28C /* MileTaskStorage.framework */,
+				4417DF722E12728B00054FAE /* WidgetKit.framework */,
+				4417DF742E12728B00054FAE /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,6 +258,51 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4417DF272E1271C000054FAE /* MileTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4417DF2E2E1271C000054FAE /* Build configuration list for PBXNativeTarget "MileTaskTests" */;
+			buildPhases = (
+				4417DF242E1271C000054FAE /* Sources */,
+				4417DF252E1271C000054FAE /* Frameworks */,
+				4417DF262E1271C000054FAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4417DF2D2E1271C000054FAE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4417DF292E1271C000054FAE /* MileTaskTests */,
+			);
+			name = MileTaskTests;
+			packageProductDependencies = (
+			);
+			productName = MileTaskTests;
+			productReference = 4417DF282E1271C000054FAE /* MileTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4417DF702E12728B00054FAE /* MileTaskLiveActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4417DF872E12728C00054FAE /* Build configuration list for PBXNativeTarget "MileTaskLiveActivityExtension" */;
+			buildPhases = (
+				4417DF6D2E12728B00054FAE /* Sources */,
+				4417DF6E2E12728B00054FAE /* Frameworks */,
+				4417DF6F2E12728B00054FAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4417DF762E12728C00054FAE /* MileTaskLiveActivity */,
+			);
+			name = MileTaskLiveActivityExtension;
+			packageProductDependencies = (
+			);
+			productName = MileTaskLiveActivityExtension;
+			productReference = 4417DF712E12728B00054FAE /* MileTaskLiveActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4435ABBB2E0D8BD700FB991E /* MileTask */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4435ABCB2E0D8BD800FB991E /* Build configuration list for PBXNativeTarget "MileTask" */;
@@ -183,10 +310,12 @@
 				4435ABB82E0D8BD700FB991E /* Sources */,
 				4435ABB92E0D8BD700FB991E /* Frameworks */,
 				4435ABBA2E0D8BD700FB991E /* Resources */,
+				4417DF8B2E12728C00054FAE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4417DF852E12728C00054FAE /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				4435ABBE2E0D8BD700FB991E /* MileTask */,
@@ -209,6 +338,13 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					4417DF272E1271C000054FAE = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4435ABBB2E0D8BD700FB991E;
+					};
+					4417DF702E12728B00054FAE = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					4435ABBB2E0D8BD700FB991E = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -278,11 +414,27 @@
 			projectRoot = "";
 			targets = (
 				4435ABBB2E0D8BD700FB991E /* MileTask */,
+				4417DF272E1271C000054FAE /* MileTaskTests */,
+				4417DF702E12728B00054FAE /* MileTaskLiveActivityExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4417DF262E1271C000054FAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4417DF6F2E12728B00054FAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4435ABBA2E0D8BD700FB991E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,6 +445,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4417DF242E1271C000054FAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4417DF6D2E12728B00054FAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4435ABB82E0D8BD700FB991E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,7 +468,122 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4417DF2D2E1271C000054FAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4435ABBB2E0D8BD700FB991E /* MileTask */;
+			targetProxy = 4417DF2C2E1271C000054FAE /* PBXContainerItemProxy */;
+		};
+		4417DF852E12728C00054FAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4417DF702E12728B00054FAE /* MileTaskLiveActivityExtension */;
+			targetProxy = 4417DF842E12728C00054FAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4417DF2F2E1271C000054FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8DC3XDL7Z3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MileTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MileTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MileTask";
+			};
+			name = Debug;
+		};
+		4417DF302E1271C000054FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8DC3XDL7Z3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MileTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MileTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MileTask";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4417DF882E12728C00054FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8DC3XDL7Z3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MileTaskLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MileTaskLiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MileTask.MileTaskLiveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4417DF892E12728C00054FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8DC3XDL7Z3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MileTaskLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MileTaskLiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MileTask.MileTaskLiveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		4435ABC92E0D8BD800FB991E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -443,7 +724,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -487,7 +768,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -508,6 +789,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4417DF2E2E1271C000054FAE /* Build configuration list for PBXNativeTarget "MileTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4417DF2F2E1271C000054FAE /* Debug */,
+				4417DF302E1271C000054FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4417DF872E12728C00054FAE /* Build configuration list for PBXNativeTarget "MileTaskLiveActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4417DF882E12728C00054FAE /* Debug */,
+				4417DF892E12728C00054FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4435ABB72E0D8BD700FB991E /* Build configuration list for PBXProject "MileTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

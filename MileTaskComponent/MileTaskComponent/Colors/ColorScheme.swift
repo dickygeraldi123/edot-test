@@ -52,6 +52,7 @@ public extension Color {
     // MARK: - Usage Color
     // Background
     static let BackgroundPrimary = Color(light: .backgroundPrimaryBlack, dark: .backgroundPrimaryLight)
+    static let BackgroundInversePrimary = Color(light: .backgroundPrimaryLight, dark: .backgroundPrimaryBlack)
     static let BackgroundSecondaryPrimary = Color(light: .backgroundSecondaryBlack, dark: .backgroundSecondaryLight)
 
     // Text

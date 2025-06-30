@@ -48,6 +48,7 @@ struct BasicTextField: View {
                         .keyboardType(keyboard)
                         .font(Font.customFont(type: .medium, size: 12))
                         .autocapitalization(.none)
+                        .autocorrectionDisabled()
                         .onChange(of: text) { updateText($0) }
                 }
             }

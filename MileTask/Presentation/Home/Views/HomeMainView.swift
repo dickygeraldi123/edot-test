@@ -11,8 +11,10 @@ import MileTaskComponent
 
 struct HomeMainView: View {
     let store: StoreOf<HomeViewStore>
+    private let router: HomePageRouter
 
-    init() {
+    init(router: HomePageRouter) {
+        self.router = router
         self.store = Store(
             initialState: HomeViewStore.State()
         ) {
@@ -21,54 +23,63 @@ struct HomeMainView: View {
     }
 
     var body: some View {
-            ScrollView {
-                LazyVStack(spacing: 12) {
-                    Text("Hi, how's your days...")
-                        .typographyStyle(.Custom(size: 12, .bold))
-                        .foregroundColor(.TextInversePrimary)
-                        .lineLimit(1)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-
-                    Text("Manage Your \nDaily Task")
-                        .typographyStyle(.Custom(size: 24, .bold))
-                        .foregroundColor(.TextInversePrimary)
-                        .lineLimit(2)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-
-                    switch store.tasks {
-                    case .loading:
-                        ForEach(0..<5) { _ in
+        WithViewStore(store, observe: { $0 }) { viewStore in
+            ZStack(alignment: .bottomTrailing) {
+                ScrollView {
+                    LazyVStack(spacing: 12) {
+                        Text("Hi, how's your days...")
+                            .typographyStyle(.Custom(size: 12, .bold))
+                            .foregroundColor(.TextInversePrimary)
+                            .lineLimit(1)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        Text("Manage Your \nDaily Task")
+                            .typographyStyle(.Custom(size: 24, .bold))
+                            .foregroundColor(.TextInversePrimary)
+                            .lineLimit(2)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        switch viewStore.tasks {
+                        case .loading:
+                            ForEach(0..<5) { _ in
+                                skeletonLoad()
+                            }
+                        case .data(let tasks):
+                            ForEach(tasks, id: \.self) { data in
+                                TaskViewCell(
+                                    data: data
+                                )
+                            }
+                        case .empty:
+                            HStack {
+                                Spacer()
+                                EmptyStateView(
+                                    config: EmptyStateConfig(
+                                        title: "Oops, You don't have task",
+                                        desc: "You can click + button in the bottom left",
+                                        imageName: "empty_state_illustration"
+                                    )
+                                )
+                                Spacer()
+                            }
+                        default:
                             skeletonLoad()
                         }
-                    case .data(let tasks):
-                        ForEach(tasks, id: \.self) { data in
-                            TaskViewCell(
-                                data: data
-                            )
-                        }
-                    case .empty:
-                        HStack {
-                            Spacer()
-                            EmptyStateView(
-                                config: EmptyStateConfig(
-                                    title: "Oops, You don't have task",
-                                    desc: "You can click + button in the bottom left",
-                                    imageName: "empty_state_illustration"
-                                )
-                            )
-                            Spacer()
-                        }
-                    default:
-                        skeletonLoad()
+                    }
+                    .padding(.all, 16)
                 }
+                PlusButton(onClick: {
+                    router.routeToAddFormPage()
+                })
+                .frame(width: 48, height: 48)
+                .padding(.all, 16)
             }
-            .padding(.all, 16)
-        }
             .background(Color.BackgroundPrimary)
-        .onUIKitViewDidLoad {
-            store.send(.viewDidLoad)
+            .onAppear {
+                viewStore.send(.viewWillAppear)
+            }
+            .statusBarBackground(color: .BackgroundPrimary)
         }
-        .statusBarBackground(color: .BackgroundPrimary)
     }
 }
 

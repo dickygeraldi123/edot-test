@@ -9,11 +9,11 @@ import SwiftUI
 
 public struct PrimaryButton: View {
     public var onClick: (() -> Void)?
-    @State public var isEnable: Bool
+    @Binding public var isEnable: Bool
 
-    public init(onClick: (() -> Void)? = nil, isEnable: Bool) {
+    public init(onClick: (() -> Void)? = nil, isEnable: Binding<Bool>) {
         self.onClick = onClick
-        self.isEnable = isEnable
+        self._isEnable = isEnable
     }
 
     public var body: some View {
@@ -28,7 +28,9 @@ public struct PrimaryButton: View {
         .cornerRadius(12)
         .frame(height: 40)
         .onTapGesture {
-            onClick?()
+            if isEnable {
+                onClick?()
+            }
         }
     }
 }

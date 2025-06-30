@@ -12,7 +12,7 @@ import Combine
 
 @Reducer
 struct HomeViewStore {
-    private let env: HomeViewEnv = .live
+    private let env: MainCoreEnv = .live
 
     @ObservableState
     struct State: Equatable {
@@ -20,7 +20,7 @@ struct HomeViewStore {
     }
 
     enum Action: Equatable {
-        case viewDidLoad
+        case viewWillAppear
         case getTasks
         case mapTasksResponse([TaskModel])
     }
@@ -28,7 +28,7 @@ struct HomeViewStore {
     var body: some Reducer<State, Action> {
         Reduce { state, action in
             switch action {
-            case .viewDidLoad:
+            case .viewWillAppear:
                 return Effect.merge(
                     .send(.getTasks)
                 )

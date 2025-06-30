@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		4417DF162E12385200054FAE /* MileTaskRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MileTaskRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		444C936A2E0EF5BF002FF28C /* MileTaskDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MileTaskDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -42,10 +43,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4417DF152E12385200054FAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4417DF162E12385200054FAE /* MileTaskRouter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		444C93602E0EF5BF002FF28C = {
 			isa = PBXGroup;
 			children = (
 				444C936C2E0EF5BF002FF28C /* MileTaskDomain */,
+				4417DF152E12385200054FAE /* Frameworks */,
 				444C936B2E0EF5BF002FF28C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -165,7 +175,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -206,7 +216,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
