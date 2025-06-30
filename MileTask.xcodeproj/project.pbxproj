@@ -10,6 +10,8 @@
 		4417DF732E12728B00054FAE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4417DF722E12728B00054FAE /* WidgetKit.framework */; };
 		4417DF752E12728B00054FAE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4417DF742E12728B00054FAE /* SwiftUI.framework */; };
 		4417DF862E12728C00054FAE /* MileTaskLiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4417DF712E12728B00054FAE /* MileTaskLiveActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4417DF8D2E1278AC00054FAE /* MileTaskStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4417DF8C2E1278AC00054FAE /* MileTaskStorage.framework */; };
+		4417DF912E1278B100054FAE /* MileTaskDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4417DF902E1278B100054FAE /* MileTaskDomain.framework */; };
 		44218AB22E104E9800B7BB52 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 44218AB12E104E9800B7BB52 /* ComposableArchitecture */; };
 		444C93B72E0EF632002FF28C /* MileTaskComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444C93B42E0EF632002FF28C /* MileTaskComponent.framework */; };
 		444C93B92E0EF632002FF28C /* MileTaskDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444C93B52E0EF632002FF28C /* MileTaskDomain.framework */; };
@@ -56,6 +58,8 @@
 		4417DF712E12728B00054FAE /* MileTaskLiveActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MileTaskLiveActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4417DF722E12728B00054FAE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		4417DF742E12728B00054FAE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4417DF8C2E1278AC00054FAE /* MileTaskStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MileTaskStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4417DF902E1278B100054FAE /* MileTaskDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MileTaskDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4433CC062E0D8FE300E4D832 /* MileTaskComponent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskComponent.xcodeproj; sourceTree = "<group>"; };
 		4435ABBC2E0D8BD700FB991E /* MileTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MileTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4435AC252E0D8F2D00FB991E /* MileTaskComponent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MileTaskComponent.xcodeproj; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4417DF752E12728B00054FAE /* SwiftUI.framework in Frameworks */,
+				4417DF8D2E1278AC00054FAE /* MileTaskStorage.framework in Frameworks */,
+				4417DF912E1278B100054FAE /* MileTaskDomain.framework in Frameworks */,
 				4417DF732E12728B00054FAE /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +208,8 @@
 		444C93B32E0EF632002FF28C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4417DF902E1278B100054FAE /* MileTaskDomain.framework */,
+				4417DF8C2E1278AC00054FAE /* MileTaskStorage.framework */,
 				4417DF112E1237EB00054FAE /* MileTaskRouter.framework */,
 				4485D7D82E104915003E4CBB /* RxFramework.framework */,
 				444C93B42E0EF632002FF28C /* MileTaskComponent.framework */,
@@ -490,7 +498,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8DC3XDL7Z3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = test.MileTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,7 +518,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8DC3XDL7Z3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = test.MileTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -536,7 +544,7 @@
 				INFOPLIST_FILE = MileTaskLiveActivity/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MileTaskLiveActivity;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -566,7 +574,7 @@
 				INFOPLIST_FILE = MileTaskLiveActivity/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MileTaskLiveActivity;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -708,12 +716,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MileTask/Preview Content\"";
 				DEVELOPMENT_TEAM = 8DC3XDL7Z3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MileTask/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MileTask;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -724,7 +732,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -752,12 +760,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MileTask/Preview Content\"";
 				DEVELOPMENT_TEAM = 8DC3XDL7Z3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MileTask/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MileTask;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -768,7 +776,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;

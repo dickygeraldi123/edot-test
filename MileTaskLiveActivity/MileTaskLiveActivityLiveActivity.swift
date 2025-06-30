@@ -7,74 +7,103 @@
 
 import ActivityKit
 import WidgetKit
+import MileTaskComponent
 import SwiftUI
 
-struct MileTaskLiveActivityAttributes: ActivityAttributes {
-    public struct ContentState: Codable, Hashable {
-        // Dynamic stateful properties about your activity go here!
-        var emoji: String
-    }
+// MARK: - Views
+struct LiveActivityContent: View {
+    let state: TimerAttributes.ContentState
 
-    // Fixed non-changing properties about your activity go here!
-    var name: String
+    var body: some View {
+        HStack {
+            Text(state.titleName)
+                .typographyStyle(.Custom(size: 16, .bold))
+                .foregroundColor(.TextPrimary)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .lineLimit(2)
+
+            Spacer()
+
+            HStack(alignment: .center, spacing: 16) {
+                WidgetCircleTimerView(
+                    progress: state.progress,
+                    duration: state.duration
+                )
+
+                Text(state.duration)
+                    .foregroundStyle(Color.TextPrimary)
+                    .font(.largeTitle.monospacedDigit())
+                    .minimumScaleFactor(0.8)
+                    .contentTransition(.numericText())
+                .animation(.spring(response: 0.2), value: state.progress)
+            }
+
+        }
+        .id(state)
+        .transition(.identity)
+        .padding()
+        .foregroundColor(Color.softLimeColor)
+    }
+}
+
+@DynamicIslandExpandedContentBuilder
+private func expandedContent(state: TimerAttributes.ContentState) -> DynamicIslandExpandedContent<some View> {
+    DynamicIslandExpandedRegion(.leading) {
+        Image(systemName: "timer.circle.fill")
+            .resizable()
+            .frame(width: 44.0, height: 44.0)
+            .foregroundColor(Color.lightCreamColor)
+    }
+    DynamicIslandExpandedRegion(.center) {
+        VStack {
+            Text(state.duration + " remaining")
+                .font(.title)
+                .minimumScaleFactor(0.8)
+                .contentTransition(.numericText())
+            Spacer()
+            Text(state.titleName)
+                .typographyStyle(.Custom(size: 16, .bold))
+                .foregroundColor(.TextPrimary)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .lineLimit(2)
+        }
+        .id(state)
+        .transition(.identity)
+    }
 }
 
 struct MileTaskLiveActivityLiveActivity: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: MileTaskLiveActivityAttributes.self) { context in
-            // Lock screen/banner UI goes here
-            VStack {
-                Text("Hello \(context.state.emoji)")
-            }
-            .activityBackgroundTint(Color.cyan)
-            .activitySystemActionForegroundColor(Color.black)
+        ActivityConfiguration(for: TimerAttributes.self) { context in
+            LiveActivityContent(state: context.state)
+                //.activityBackgroundTint(Color.liveActivityBackground.opacity(0.25))
+                .activitySystemActionForegroundColor(Color.softLimeColor)
 
         } dynamicIsland: { context in
             DynamicIsland {
-                // Expanded UI goes here.  Compose the expanded UI through
-                // various regions, like leading/trailing/center/bottom
-                DynamicIslandExpandedRegion(.leading) {
-                    Text("Leading")
-                }
-                DynamicIslandExpandedRegion(.trailing) {
-                    Text("Trailing")
-                }
-                DynamicIslandExpandedRegion(.bottom) {
-                    Text("Bottom \(context.state.emoji)")
-                    // more content
-                }
+                expandedContent(state: context.state)
             } compactLeading: {
-                Text("L")
+                Image(systemName: "timer")
+                    .transition(.identity)
+                    .foregroundColor(Color.lightCreamColor)
+                    .padding(8)
             } compactTrailing: {
-                Text("T \(context.state.emoji)")
+                Text(context.state.duration)
+                    .minimumScaleFactor(0.8)
+                    .contentTransition(.numericText())
+                    .monospacedDigit()
+                    .foregroundColor(Color.TextPrimary)
+                    .padding(8)
             } minimal: {
-                Text(context.state.emoji)
+                Image(systemName: "timer")
+                    .foregroundColor(Color.lightCreamColor)
             }
-            .widgetURL(URL(string: "http://www.apple.com"))
-            .keylineTint(Color.red)
         }
     }
 }
 
-extension MileTaskLiveActivityAttributes {
-    fileprivate static var preview: MileTaskLiveActivityAttributes {
-        MileTaskLiveActivityAttributes(name: "World")
+extension TimerAttributes {
+    fileprivate static var preview: TimerAttributes {
+        TimerAttributes(name: "Timer")
     }
-}
-
-extension MileTaskLiveActivityAttributes.ContentState {
-    fileprivate static var smiley: MileTaskLiveActivityAttributes.ContentState {
-        MileTaskLiveActivityAttributes.ContentState(emoji: "😀")
-     }
-     
-     fileprivate static var starEyes: MileTaskLiveActivityAttributes.ContentState {
-         MileTaskLiveActivityAttributes.ContentState(emoji: "🤩")
-     }
-}
-
-#Preview("Notification", as: .content, using: MileTaskLiveActivityAttributes.preview) {
-   MileTaskLiveActivityLiveActivity()
-} contentStates: {
-    MileTaskLiveActivityAttributes.ContentState.smiley
-    MileTaskLiveActivityAttributes.ContentState.starEyes
 }

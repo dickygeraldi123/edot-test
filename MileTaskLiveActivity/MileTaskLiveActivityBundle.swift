@@ -12,7 +12,6 @@ import SwiftUI
 struct MileTaskLiveActivityBundle: WidgetBundle {
     var body: some Widget {
         MileTaskLiveActivity()
-        MileTaskLiveActivityControl()
         MileTaskLiveActivityLiveActivity()
     }
 }
