@@ -9,21 +9,38 @@ import MileTaskDomain
 import MileTaskStorage
 import ComposableArchitecture
 
-struct MainCoreEnv {
-    static var live = MainCoreEnv()
+protocol MainCoreEnvProtocol {
+    func getTasks() -> [TaskModel]
+    func saveTask(task: TaskModel)
+}
 
-    private var coreDataService: CoreDataService = CoreDataService.shared
-    
-    // MARK: - Fetch Data
+struct MainCoreEnv: MainCoreEnvProtocol {
+    static let live = MainCoreEnv()
+    private var coreDataService: CoreDataService
+
+    init(coreDataService: CoreDataService = .shared) {
+        self.coreDataService = coreDataService
+    }
+
     func getTasks() -> [TaskModel] {
-        let result: [TaskModel] = CoreDataService.shared.fetch(
+        coreDataService.fetch(
             TaskModel.self,
             sortDescriptors: [NSSortDescriptor(key: "startDate", ascending: false)]
         )
-        return result
     }
 
     func saveTask(task: TaskModel) {
         coreDataService.save(task)
+    }
+}
+
+private enum MainCoreEnvKey: DependencyKey {
+    static let liveValue: any MainCoreEnvProtocol = MainCoreEnv.live
+}
+
+extension DependencyValues {
+    var mainCoreEnv: any MainCoreEnvProtocol {
+        get { self[MainCoreEnvKey.self] }
+        set { self[MainCoreEnvKey.self] = newValue }
     }
 }

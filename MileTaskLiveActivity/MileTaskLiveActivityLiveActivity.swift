@@ -19,7 +19,7 @@ struct LiveActivityContent: View {
         HStack {
             Text(state.titleName)
                 .typographyStyle(.Custom(size: 16, .bold))
-                .foregroundColor(.TextPrimary)
+                .foregroundColor(.TextInversePrimary)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .lineLimit(2)
 
@@ -32,7 +32,7 @@ struct LiveActivityContent: View {
                 )
 
                 Text(state.duration)
-                    .foregroundStyle(Color.TextPrimary)
+                    .foregroundStyle(Color.TextInversePrimary)
                     .font(.largeTitle.monospacedDigit())
                     .minimumScaleFactor(0.8)
                     .contentTransition(.numericText())
@@ -64,7 +64,7 @@ private func expandedContent(state: TimerAttributes.ContentState) -> DynamicIsla
             Spacer()
             Text(state.titleName)
                 .typographyStyle(.Custom(size: 16, .bold))
-                .foregroundColor(.TextPrimary)
+                .foregroundColor(.TextInversePrimary)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .lineLimit(2)
         }
@@ -93,7 +93,7 @@ struct MileTaskLiveActivityLiveActivity: Widget {
                     .minimumScaleFactor(0.8)
                     .contentTransition(.numericText())
                     .monospacedDigit()
-                    .foregroundColor(Color.TextPrimary)
+                    .foregroundColor(Color.TextInversePrimary)
                     .padding(8)
             } minimal: {
                 Image(systemName: "timer")
@@ -107,4 +107,34 @@ extension TimerAttributes {
     fileprivate static var preview: TimerAttributes {
         TimerAttributes(name: "Timer")
     }
+}
+
+#Preview("Notification", as: .content, using: TimerAttributes.preview) {
+    MileTaskLiveActivityLiveActivity()
+}
+contentStates: {
+    TimerAttributes.ContentState(duration: "2:41", progress: 0.80, titleName: "Ngerjain Skripsi bro, kuy")
+}
+
+
+#Preview("Expand", as: .dynamicIsland(.expanded), using: TimerAttributes.preview) {
+    MileTaskLiveActivityLiveActivity()
+}
+contentStates: {
+    TimerAttributes.ContentState(duration: "2:41", progress: 0.80, titleName: "Ngerjain Skripsi bro, kuy")
+}
+
+
+#Preview("Compact", as: .dynamicIsland(.compact), using: TimerAttributes.preview) {
+    MileTaskLiveActivityLiveActivity()
+}
+contentStates: {
+    TimerAttributes.ContentState(duration: "2:41", progress: 0.80, titleName: "Ngerjain Skripsi bro, kuy")
+}
+
+#Preview("Minimal", as: .dynamicIsland(.minimal), using: TimerAttributes.preview) {
+    MileTaskLiveActivityLiveActivity()
+}
+contentStates: {
+    TimerAttributes.ContentState(duration: "2:41", progress: 0.80, titleName: "Ngerjain Skripsi bro, kuy")
 }

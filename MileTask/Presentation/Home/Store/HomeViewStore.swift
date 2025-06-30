@@ -12,7 +12,7 @@ import Combine
 
 @Reducer
 struct HomeViewStore {
-    private let env: MainCoreEnv = .live
+    @Dependency(\.mainCoreEnv) var env
 
     @ObservableState
     struct State: Equatable {

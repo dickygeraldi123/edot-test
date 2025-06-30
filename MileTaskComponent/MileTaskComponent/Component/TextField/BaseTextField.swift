@@ -30,7 +30,7 @@ public struct BaseTextField: View {
                 Group {
                     TextField(placeHolder, text: $text)
                         .keyboardType(.default)
-                        .foregroundColor(.TextPrimary)
+                        .foregroundColor(.TextInversePrimary)
                         .font(Font.customFont(type: .medium, size: 12))
                         .autocapitalization(.none)
                         .autocorrectionDisabled()
@@ -74,7 +74,7 @@ public struct ClickableTextField: View {
                     } else {
                         Text(text)
                             .font(Font.customFont(type: .medium, size: 12))
-                            .foregroundColor(.TextPrimary)
+                            .foregroundColor(.TextInversePrimary)
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
                 }

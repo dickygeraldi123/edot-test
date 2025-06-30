@@ -14,6 +14,6 @@ public extension Image {
 
     static func getImageByMode(named: String) -> String {
         return UIScreen.main.traitCollection.userInterfaceStyle == .dark ?
-            "\(named)_dark" : "\(named)_white"
+            "\(named)_white" : "\(named)_dark"
     }
 }

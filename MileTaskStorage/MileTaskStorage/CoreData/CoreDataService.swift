@@ -16,7 +16,7 @@ public final class CoreDataService: CoreDataProtocol {
         persistentContainer.viewContext
     }
 
-    private init() {
+    init(forTesting: Bool = false) {
         let bundle = Bundle(for: TaskModel.self)
         guard let modelURL = bundle.url(forResource: "MileTaskModel", withExtension: "momd"),
               let model = NSManagedObjectModel(contentsOf: modelURL) else {
@@ -24,6 +24,12 @@ public final class CoreDataService: CoreDataProtocol {
         }
 
         persistentContainer = NSPersistentContainer(name: "MileTaskModel", managedObjectModel: model)
+        
+        if forTesting {
+            let description = NSPersistentStoreDescription()
+            description.type = NSInMemoryStoreType
+            persistentContainer.persistentStoreDescriptions = [description]
+        }
 
         persistentContainer.loadPersistentStores { _, error in
             if let error = error {

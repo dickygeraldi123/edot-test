@@ -17,12 +17,12 @@ public struct EpicViewCell: View {
                 VStack(spacing: 8) {
                     Text("Wireframe")
                         .typographyStyle(.Custom(size: 16, .bold))
-                        .foregroundColor(.TextPrimary)
+                        .foregroundColor(.TextInversePrimary)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
                     Text("10 Tasks")
                         .typographyStyle(.Custom(size: 12, .medium))
-                        .foregroundColor(.TextPrimary)
+                        .foregroundColor(.TextInversePrimary)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
             }

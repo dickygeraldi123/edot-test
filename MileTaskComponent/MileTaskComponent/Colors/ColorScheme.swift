@@ -51,19 +51,19 @@ public extension Color {
 
     // MARK: - Usage Color
     // Background
-    static let BackgroundPrimary = Color(light: .backgroundPrimaryBlack, dark: .backgroundPrimaryLight)
-    static let BackgroundInversePrimary = Color(light: .backgroundPrimaryLight, dark: .backgroundPrimaryBlack)
-    static let BackgroundSecondaryPrimary = Color(light: .backgroundSecondaryBlack, dark: .backgroundSecondaryLight)
+    static let BackgroundPrimary = Color(light: .backgroundPrimaryLight, dark: .backgroundPrimaryBlack)
+    static let BackgroundInversePrimary = Color(light: .backgroundPrimaryBlack, dark: .backgroundPrimaryLight)
+    static let BackgroundSecondaryPrimary = Color(light: .backgroundSecondaryLight, dark: .backgroundSecondaryBlack)
 
     // Text
-    static let TextSolid = Color(light: .darkColor, dark: .whiteColor)
-    static let TextPrimary = Color(light: .primaryTextLight, dark: .primaryTextBlack)
-    static let TextSecondary = Color(light: .secondaryTextLight, dark: .secondaryTextBlack)
-    static let TextInversePrimary = Color(light: .primaryTextBlack, dark: .primaryTextLight)
-    static let TextInverseSecondary = Color(light: .secondaryTextBlack, dark: .secondaryTextLight)
+    static let TextSolid = Color(light: .whiteColor, dark: .darkColor)
+    static let TextPrimary = Color(light: .primaryTextBlack, dark: .primaryTextLight)
+    static let TextSecondary = Color(light: .secondaryTextBlack, dark: .secondaryTextLight)
+    static let TextInversePrimary = Color(light: .primaryTextLight, dark: .primaryTextBlack)
+    static let TextInverseSecondary = Color(light: .secondaryTextLight, dark: .secondaryTextBlack)
 
     // Border
-    static let borderLinePrimary = Color(light: .borderDark, dark: .borderWhite)
+    static let borderLinePrimary = Color(light: .borderWhite, dark: .borderDark)
 }
 
 extension Color {
